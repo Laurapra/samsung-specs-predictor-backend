@@ -379,8 +379,8 @@ def predict(specs: DeviceSpecs):
     
     # Obtengo dispositivos similares
     similar_devices = [
-      SimilarDevices(**device)
-      for device in get_similar_devices(input_data, predicted_price)
+            SimilarDevices(**device)
+            for device in get_similar_devices(input_data, predicted_price)
     ]
     # Preparar la respuesta
     response = PredictionResponse(
