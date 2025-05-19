@@ -10,10 +10,13 @@ import numpy as np
 import re
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Configurar rutas de archivos
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR / "model"
+
+load_dotenv()
 
 app = FastAPI(
   title='Samsung Specs Predictor',
